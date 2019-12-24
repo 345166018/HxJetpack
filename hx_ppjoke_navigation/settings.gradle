@@ -1,0 +1,2 @@
+include ':app', ':lib_nav_annotation', ':lib_nav_compiler'
+rootProject.name='hx_ppjoke'
