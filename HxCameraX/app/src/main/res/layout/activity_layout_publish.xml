@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+
+
+
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/action_add_file"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:src="@drawable/ic_add_file"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <FrameLayout
+            android:id="@+id/file_container"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <com.hongx.camerax.view.PPImageView
+                android:id="@+id/cover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/video_icon"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_video_play" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/action_delete_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:paddingLeft="@dimen/dp_6"
+                app:srcCompat="@drawable/icon_close"
+                app:tint="@color/color_white" />
+        </FrameLayout>
+
+    </LinearLayout>
+</layout>
